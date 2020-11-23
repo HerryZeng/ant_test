@@ -47,4 +47,4 @@ npm install
 
 ### 全局安装vue-cli和cnpm
 npm -g install @vue/cli
-npm -g install cli和cnpm
+npm -g install cnpm
