@@ -26,9 +26,13 @@
 
     <a-menu v-model:selectedKeys="current" mode="horizontal">
        <a-menu-item key="mail"> <mail-outlined /><router-link to="/">首页</router-link></a-menu-item>
-      <a-menu-item key="app" disabled>
-        <appstore-outlined />不能点击
-      </a-menu-item>
+       <a-menu-item key="book"><router-link to="/books">书籍</router-link></a-menu-item>
+       <a-menu-item key="post_test"><router-link to="/post_test">Post提交</router-link></a-menu-item>
+       <a-menu-item key="fileupload"><router-link to="/fileupload">单文件上传</router-link></a-menu-item>
+       <a-menu-item key="fileuploads"><router-link to="/fileuploads">多文件上传</router-link></a-menu-item>
+      <!-- <a-menu-item key="app" disabled> -->
+        <!-- <appstore-outlined />不能点击 -->
+      <!-- </a-menu-item> -->
       <a-sub-menu>
         <template #title>
           <span class="submenu-title-wrapper">
@@ -61,7 +65,7 @@
 import Ant from "ant-design-vue";
 import {
   MailOutlined,
-  AppstoreOutlined,
+  // AppstoreOutlined,
   SettingOutlined,
 } from "@ant-design/icons-vue";
 
@@ -85,7 +89,7 @@ export default {
     // SyncOutlined,
     // LoadingOutlined,
     MailOutlined,
-    AppstoreOutlined,
+    // AppstoreOutlined,
     SettingOutlined,
   },
   data() {
